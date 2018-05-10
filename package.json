@@ -1,0 +1,36 @@
+{
+  "name": "translation-workflow",
+  "version": "1.2.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prepare": "npm run build",
+    "build": "babel src --presets=es2015,stage-1 --out-dir lib",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "translation": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ratehub/translation-workflow.git"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "homepage": "https://github.com/ratehub/translation-workflow#readme",
+  "dependencies": {
+    "commander": "^2.9.0",
+    "csvtojson": "1.1.7",
+    "google-auth-library": "^0.10.0",
+    "googleapis": "^19.0.0",
+    "object.values": "^1.0.4",
+    "readline": "^1.3.0",
+    "request": "^2.81.0",
+    "rimraf": "^2.6.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.11.4",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-1": "^6.5.0"
+  }
+}
